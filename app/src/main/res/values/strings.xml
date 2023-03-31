@@ -1,3 +1,15 @@
 <resources>
+    <string name="activity_access">Access Menu</string>
+    <string name="activity_permissions">Permissions</string>
+    <string name="activity_permissions_modification">Modification</string>
+    <string name="activity_picking">Picking</string>
+    <string name="activity_stock">Stock</string>
+    <string name="activity_stock_add_item">Add Item</string>
+    <string name="activity_stowing">Stowing</string>
+    <string name="activity_users">Users</string>
+    <string name="activity_users_modification">Modification</string>
     <string name="app_name">Workhorse Warehouse</string>
+    <string name="appbar_back_arrow">Settings</string>
+    <string name="appbar_logout">Logout</string>
+    <string name="appbar_settings">Settings</string>
 </resources>
