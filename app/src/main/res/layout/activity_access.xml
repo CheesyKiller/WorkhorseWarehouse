@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AccessActivity"
-    android:background="@color/access_gray"
-    >
+    android:background="@color/access_gray">
 
     <TextView
-        android:id="@+id/access_tittle"
+        android:id="@+id/access_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="@string/activity_access"
         android:textSize="30sp"
         android:gravity="bottom"
@@ -19,55 +19,108 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <GridLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/access_tittle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:columnCount="2">
+        android:layout_height="match_parent"
+        android:layout_marginVertical="80dp">
 
-        <Button
-            android:id="@+id/picking_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:text="@string/activity_picking"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TableRow
+            android:layout_weight="1">
 
-        <Button
-            android:id="@+id/stowing_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:text="@string/activity_stowing"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            <ImageView
+                android:id="@+id/picker_icon"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/picking_icon"
+                android:background="@color/gray"
+                app:tint="@color/picking_purple"
+                android:padding="7dp"
+                android:tintMode="src_in"/>
 
-        <Button
-            android:id="@+id/stock_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:text="@string/activity_stock"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            <ImageView
+                android:id="@+id/stowing_icon"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/stowing_icon"
+                android:background="@color/gray"
+                app:tint="@color/stowing_green"
+                android:padding="6dp"
+                android:tintMode="src_in" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/permissions_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:text="@string/activity_permissions"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/></GridLayout>
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:id="@+id/picking_button"
+                android:text="@string/activity_picking"
+                android:backgroundTint="@color/picking_purple"/>
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/stowing_button"
+                android:text="@string/activity_stowing"
+                android:backgroundTint="@color/stowing_green"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/stock_icon"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/stock_icon"
+                android:background="@color/gray"
+                app:tint="@color/stock_yellow"
+                android:padding="12dp"
+                android:tintMode="src_in" />
+
+            <ImageView
+                android:id="@+id/permissions_icon"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/permissions_icon"
+                android:background="@color/gray"
+                app:tint="@color/permissions_orange"
+                android:tintMode="src_in" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:id="@+id/stock_button"
+                android:text="@string/activity_stock"
+                android:backgroundTint="@color/stock_yellow"/>
+
+            <Button
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/permissions_button"
+                android:text="@string/activity_permissions"
+                android:backgroundTint="@color/permissions_orange"/>
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
