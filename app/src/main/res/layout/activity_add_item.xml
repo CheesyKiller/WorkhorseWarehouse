@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccessActivity"
+    android:background="@color/stock_yellow">
+
+    <TextView
+        android:id="@+id/add_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_item_button_text"
+        android:textSize="30sp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/item_name_default"
+        android:textSize="24sp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_text" />
+
+    <TableRow
+        android:id="@+id/new_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_name">
+        <TextView
+            android:id="@+id/new_item_name_text"
+            android:text="@string/new_item_name_text"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/new_item_name_edit_text"
+            android:hint="@string/new_item_name_default"
+            android:autofillHints="@string/new_item_name_default"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="text"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/enter_barcode_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/new_barcode_text"
+        android:textSize="24sp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_item_name" />
+
+    <TableRow
+        android:id="@+id/new_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/enter_barcode_information">
+        <TextView
+            android:id="@+id/new_barcode_text"
+            android:text="@string/new_barcode_text"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/new_barcode_edit_text"
+            android:hint="@string/new_barcode_default"
+            android:autofillHints="@string/new_barcode_default"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:inputType="text"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/adjust_stock_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/adjust_stock_text"
+        android:textSize="24sp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_barcode" />
+
+    <TableRow
+        android:id="@+id/adjustment_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/adjust_stock_text">
+        <Button
+            android:id="@+id/subtract_10_button"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
+            android:text="@string/subtract_10_text"/>
+
+        <Button
+            android:id="@+id/subtract_1_button"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
+            android:text="@string/subtract_1_text"/>
+
+        <TextView
+            android:id="@+id/current_adjustment_text"
+            android:text="@string/current_adjustment_default"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/add_1_button"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
+            android:text="@string/add_1_text"/>
+
+        <Button
+            android:id="@+id/add_10_button"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
+            android:text="@string/add_10_text"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/add_item_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/add_item_button_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_button"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/cancel_button_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

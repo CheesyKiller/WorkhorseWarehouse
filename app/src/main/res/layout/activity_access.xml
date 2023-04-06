@@ -94,9 +94,9 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_margin="8dp"
-                android:src="@drawable/permissions_icon"
+                android:src="@drawable/settings_icon"
                 android:background="@color/gray"
-                app:tint="@color/permissions_orange"
+                app:tint="@color/settings_orange"
                 android:tintMode="src_in" />
         </TableRow>
 
@@ -118,8 +118,8 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="8dp"
                 android:id="@+id/permissions_button"
-                android:text="@string/activity_permissions"
-                android:backgroundTint="@color/permissions_orange"/>
+                android:text="@string/activity_settings"
+                android:backgroundTint="@color/settings_orange"/>
         </TableRow>
     </TableLayout>
 

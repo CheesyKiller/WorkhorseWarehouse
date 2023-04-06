@@ -3,14 +3,11 @@
     <string name="sample_logo">Workhorse Warehouse Sample Logo</string>
 
     <string name="activity_access">Access Menu</string>
-    <string name="activity_permissions">Permissions</string>
-    <string name="activity_permissions_modification">Modification</string>
+    <string name="activity_settings">Settings</string>
     <string name="activity_picking">Picking</string>
     <string name="activity_stock">Stock</string>
     <string name="activity_stock_add_item">Add Item</string>
     <string name="activity_stowing">Stowing</string>
-    <string name="activity_users">Users</string>
-    <string name="activity_users_modification">Modification</string>
 
     <string name="appbar_back_arrow">Settings</string>
     <string name="appbar_logout">Logout</string>
@@ -27,6 +24,43 @@
     <string name="search_item_text">Item</string>
 
     <string name="add_item_button_text">Add Item</string>
+
+    <string name="notifications_subtitle">Notifications</string>
+    <string name="low_stock_warning_material_switch">Low Stock Warning</string>
+    <string name="out_of_stock_warning_material_switch">Out Of Stock Warning</string>
+
+    <string name="item_name_default">Item Name</string>
+
+    <string name="barcode_text">Barcode</string>
+    <string name="barcode_default">N/A</string>
+
+    <string name="current_stock_text">Current Stock</string>
+    <string name="current_stock_default">0</string>
+
+    <string name="adjust_stock_text">Adjust Stock</string>
+
+    <string name="subtract_10_text">-10</string>
+    <string name="subtract_1_text">-1</string>
+    <string name="current_adjustment_default">0</string>
+    <string name="add_1_text">+1</string>
+    <string name="add_10_text">+10</string>
+
+    <string name="update_barcode_text">Update Barcode</string>
+    <string name="new_barcode_text">New Barcode</string>
+    <string name="new_barcode_default">barcode</string>
+
+    <string name="new_item_name_text">New Item Name</string>
+    <string name="new_item_name_default">Name</string>
+
+    <string name="delete_item_button_text">Delete Item</string>
+    <string name="update_item_button_text">Update Item</string>
+    <string name="cancel_button_text">Cancel</string>
+
+    <string name="picking_amount_text">Amount Being Picked</string>
+    <string name="pick_items_text">Pick</string>
+
+    <string name="stowing_amount_text">Amount Being Stowed</string>
+    <string name="stow_items_text">Stow</string>
 
     <!-- For the fake data populating the scrollable lists -->
     <string name="fake_item_name">Item Name</string>

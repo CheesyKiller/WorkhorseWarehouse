@@ -4,8 +4,8 @@
     <color name="login_blue">#AFD6FF</color>
     <color name="access_gray">#D9D9D9</color>
     <color name="stowing_green">#B1FFAF</color>
-    <color name="permissions_orange">#FFD689</color>
-    <color name="users_red">#FCBBB7</color>
+    <color name="settings_orange">#FFD689</color>
+    <color name="red">#FCBBB7</color>
     <color name="stock_yellow">#FEFEA7</color>
     <color name="white">#FFFFFF</color>
     <color name="gray">#AAAAAA</color>
